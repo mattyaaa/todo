@@ -12,4 +12,11 @@ class TodoController extends Controller
     {
         return view('index');
     }
+
+    public function store(Request $request)
+    {
+        $todo = $request->only('content');
+        Todo::create($todo);
+        return redirect('/');
+    }
 }
