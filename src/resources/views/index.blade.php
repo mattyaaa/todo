@@ -6,12 +6,20 @@
 
 @section('content')
 @if (session('message'))
-<div class="todo__alert">
+< class="todo__alert">
     <div class="todo__alert--success">
         {{ session('message') }}
     </div>
-</div>
-@endif
+    @endif
+      @if($errors->any())
+        <div class="todo__alert--danger">
+            <ul>
+                @foreach($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+       @endif
 
 <div class="todo__content">
     <form class="create-form" action="/todos" method="post">
