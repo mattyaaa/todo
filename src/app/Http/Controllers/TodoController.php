@@ -14,7 +14,7 @@ class TodoController extends Controller
         return view('index', compact('todos'));
     }
 
-    public function store(Request $request)
+    public function store(TodoRequest $request)
     {
         $todo = $request->only('content');
         Todo::create($todo);
