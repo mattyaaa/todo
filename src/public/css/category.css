@@ -90,7 +90,7 @@
 }
 
 .update-form__item {
-    width: 80%;
+    width: 40%;
     line-height: 50%;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .update-form__button {
-    width: 50%;
+    width: 50px;
 }
 
 .update-form__button-submit {
@@ -115,7 +115,7 @@
 }
 
 .delete-form__button {
-    width: 50%;
+    width: 50px;
 }
 
 .delete-form__button-submit {
