@@ -43,7 +43,7 @@
     <div class="section__title">
         <h2>Todo検索</h2>
     </div>
-    <form class="search-form" action="/todos/search" method="post">
+    <form class="search-form" action="/todos/search" method="get">
         @csrf
         <div class="search-form__item">
             <input class="search-form__item-input" type="text" name="keyword" value="{{ old('keyword') }}">
